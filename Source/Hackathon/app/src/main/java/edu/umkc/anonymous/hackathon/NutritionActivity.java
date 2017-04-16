@@ -66,7 +66,7 @@ public class NutritionActivity extends AppCompatActivity {
     public void getNutrition(View v) {
         //TextView sourceTextView = (TextView) findViewById(R.id.txt_Food);
         //sourceText = sourceTextView.getText().toString();
-        sourceText = "apple";
+        sourceText = "doughnut";
         inputTextView.setText("Input value = " + sourceText);
 
         JSONObject request = new JSONObject();
@@ -259,10 +259,10 @@ public class NutritionActivity extends AppCompatActivity {
         }
 
         for (int j = 0; j < bad.size(); j++) {
-            if (j == bad.size() - 1) {
-                description += good.get(j);
+            if (j == (bad.size() - 1)) {
+                description += bad.get(j);
             } else {
-                description += good.get(j) + ", ";
+                description += bad.get(j) + ", ";
             }
         }
 

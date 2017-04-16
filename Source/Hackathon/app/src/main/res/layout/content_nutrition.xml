@@ -1,12 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
         android:text="Get Nutrition"
-        android:layout_width="143dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
         android:id="@+id/btn_nutrition"
         android:onClick="getNutrition"/>
-</LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_nutrition"
+        android:layout_toStartOf="@+id/btn_nutrition"
+        android:layout_marginEnd="23dp"
+        android:layout_marginTop="47dp"
+        android:id="@+id/txt_nutrition" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_nutrition"
+        android:layout_alignStart="@+id/txt_nutrition"
+        android:layout_marginTop="22dp"
+        android:id="@+id/txt_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_serving"
+        android:layout_below="@+id/txt_name"
+        android:layout_alignStart="@+id/txt_name"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_serving"
+        android:layout_below="@+id/txt_serving"
+        android:id="@+id/txt_calories" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_calories"
+        android:layout_below="@+id/txt_calories"
+        android:id="@+id/txt_fat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_fat"
+        android:layout_below="@+id/txt_fat"
+        android:id="@+id/txt_saturated" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_saturated"
+        android:layout_below="@+id/txt_saturated"
+        android:id="@+id/txt_cholesterol" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_cholesterol"
+        android:layout_below="@+id/txt_cholesterol"
+        android:id="@+id/txt_sodium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_sodium"
+        android:layout_below="@+id/txt_sodium"
+        android:id="@+id/txt_fiber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_fiber"
+        android:layout_below="@+id/txt_fiber"
+        android:id="@+id/txt_vitaminA" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_vitaminA"
+        android:layout_below="@+id/txt_vitaminA"
+        android:id="@+id/txt_vitaminC" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_vitaminC"
+        android:layout_below="@+id/txt_vitaminC"
+        android:id="@+id/txt_calcium" />
+
+
+
+
+
+</RelativeLayout>

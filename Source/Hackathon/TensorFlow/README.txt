@@ -7,6 +7,8 @@ https://github.com/jbvx8/hackathon/blob/master/Source/Hackathon/TensorFlow/Scree
 
 For identify food image, the result is (for an actual hamburger picture): 
 
+Testing image: https://github.com/jbvx8/hackathon/blob/master/Source/Hackathon/TensorFlow/img_1205thumb.jpg
+
 hamburger (score = 0.98475)
 sub (score = 0.01232)
 salad (score = 0.00293)

@@ -9,31 +9,29 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
-        android:text="Get Nutrition"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp"
-        android:id="@+id/btn_nutrition"
-        android:onClick="getNutrition"/>
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btn_nutrition"
         android:layout_toStartOf="@+id/btn_nutrition"
-        android:layout_marginEnd="23dp"
-        android:layout_marginTop="47dp"
-        android:id="@+id/txt_nutrition" />
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt_input" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_input"
+        android:layout_marginTop="30dp"
+        android:id="@+id/txt_nutrition"
+        android:layout_toEndOf="@+id/txt_input" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_nutrition"
         android:layout_alignStart="@+id/txt_nutrition"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/txt_name" />
 
     <TextView
@@ -117,8 +115,34 @@
         android:layout_below="@+id/txt_vitaminC"
         android:id="@+id/txt_calcium" />
 
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_calcium"
+        android:layout_below="@+id/txt_calcium"
+        android:id="@+id/txt_description" />
 
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/txt_description"
+        android:layout_below="@+id/txt_description"
+        android:id="@+id/txt_health_status"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
 
+    <Button
+        android:text="Get Nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:id="@+id/btn_nutrition"
+        android:onClick="getNutrition"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

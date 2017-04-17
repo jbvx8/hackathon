@@ -66,7 +66,7 @@ public class NutritionActivity extends AppCompatActivity {
     public void getNutrition(View v) {
         //TextView sourceTextView = (TextView) findViewById(R.id.txt_Food);
         //sourceText = sourceTextView.getText().toString();
-        sourceText = "apple";
+        sourceText = "doughnut";
         inputTextView.setText("Input value = " + sourceText);
 
         JSONObject request = new JSONObject();
